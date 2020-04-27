@@ -45,3 +45,11 @@ section.home-section {
 	background-color: #BD5D38 !important;
 	color: #fff;
 }
+
+#btnScrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}

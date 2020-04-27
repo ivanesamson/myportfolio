@@ -27,13 +27,10 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
-  <style type="text/css">
-
-  </style>
 </head>
 
-<body id="page-top">
 
+<body id="page-top">
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <img src="img/profile.jpg" height="35" width="40" class="rounded-circle img-fluid d-block-6 d-lg-none">
@@ -150,6 +147,36 @@
     </section>
 
     <hr class="m-0">
+
+    <section class="services-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Web Developer</h3>
+            <div class="subheading mb-3"><a href="https://www.wcubesolutions.com/" target="_blank">Wcube Solutions Inc.</a></div>
+            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September - December 2019</span>
+            <img class="mx-auto d-block about-pic" src="img/wcube.jpg" alt="credits-wcube" width="250" height="200" />
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">IT Support Intern</h3>
+            <div class="subheading mb-3"><a href="https://www.bfar.da.gov.ph/" target="_blank">Bureau of Fisheries and Aquatic Resources (BFAR)</a></div>
+            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">April - June 2018</span>
+            <img class="mx-auto d-block about-pic" src="img/bfar.png" alt="credits-wcube" width="250" height="200" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
@@ -316,19 +343,38 @@
         </ul>
       </div>
     </section>
-
   </div>
+  <button onclick="topFunction()" id="btnScrollToTop" class="btn btn-outline-secondary" title="Go to top">
+    <i class="fa fa-angle-double-up"></i>
+  </button>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
 
+
+  <script>
+    $(function() {
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      scrollFunction();
+    });
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        $('#btnScrollToTop').css('display', 'block');
+      } else {
+        $('#btnScrollToTop').css('display', 'none');
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
 </body>
 
 </html>
