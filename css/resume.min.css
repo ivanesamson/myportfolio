@@ -34,7 +34,7 @@
     line-height: 1;
 	font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
-section.home-section {
+section#home {
     background: linear-gradient(to bottom, #D3D3D3 5%, #fff 86%);
     height: auto;
 }
