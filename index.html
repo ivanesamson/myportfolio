@@ -20,10 +20,9 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="<?=base_url('assets/img/favicon.ico'); ?>" />
+  <link rel="shortcut icon" href="img/is-logo.png" />
   <!-- Apple devices Homescreen icon -->
-  <link rel="apple-touch-icon-precomposed" href="<?=base_url('assets/img/apple-touch-icon-precomposed.png'); ?>" />
-
+  <link rel="apple-touch-icon-precomposed" href="img/is-logo.png" />
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
@@ -433,7 +432,33 @@
 
 
   <script>
-    $(function() {window.onscroll = function() {scrollFunction()}; scrollFunction(); $(window).on("resize", function() {var win = $(this); if (win.width() < 768) {$('#carouselExampleIndicators').removeClass('carousel-fades'); $('.service_by3').addClass('d-none'); } else {$('.service_by3').removeClass('d-none'); } }); }); function scrollFunction() {if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {$('#btnScrollToTop').css('display', 'block'); } else {$('#btnScrollToTop').css('display', 'none'); } } </script>
+    $(function() {
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      scrollFunction();
+
+      $(window).on("resize", function() {
+        var win = $(this);
+        if (win.width() < 768) {
+          $('#carouselExampleIndicators').removeClass('carousel-fades');
+          $('.service_by3').addClass('d-none');
+        } else {
+          $('.service_by3').removeClass('d-none');
+        }
+      });
+
+    });
+
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        $('#btnScrollToTop').css('display', 'block');
+      } else {
+        $('#btnScrollToTop').css('display', 'none');
+      }
+    }
+
+  </script>
 </body>
 
 </html>
