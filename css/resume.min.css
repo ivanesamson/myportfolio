@@ -17,7 +17,11 @@
 	.carousel-title {
 		font-size: 3.5rem;
 	}
+	.gallery-expander {
+		/*width: 120vh;*/
+	}
 }
+
 
 @media (max-width: 597px) {
 	.carousel-title {
@@ -26,6 +30,9 @@
 	.services-bordered {
 		border: none !important;
 	}
+}
+.services-bordered {
+	border-radius: 10px;
 }
 .carousel-title {
 	color: #343a40;
@@ -85,3 +92,39 @@ section#home {
 .bg-footer {
 	background-color: #e9ecef;
 }
+
+
+
+.gallery-expander {
+    position: absolute;
+    /*left: 0;*/
+    right: 0;
+    /*overflow: hidden;*/
+    /*max-height: 0;*/
+    -webkit-transition: max-height 500ms ease;
+    -o-transition: max-height 500ms ease;
+    transition: max-height 500ms ease;
+}
+
+.gallery-expander-contents {
+    margin: 0 auto;
+    /*width: 1000px;*/
+    padding: 20px 0;
+}
+
+.gallery-expander-contents div.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.gallery-expander-contents > div.col {
+    float: left;
+    width: 480px;
+}
+
+.single-cat {
+	height: 100% !important;
+	overflow: hidden;
+}
+
+
