@@ -433,33 +433,7 @@
 
 
   <script>
-    $(function() {
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      scrollFunction();
-
-      $(window).on("resize", function() {
-        var win = $(this);
-        if (win.width() < 768) {
-          $('#carouselExampleIndicators').removeClass('carousel-fades');
-          $('.service_by3').addClass('d-none');
-        } else {
-          $('.service_by3').removeClass('d-none');
-        }
-      });
-
-    });
-
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        $('#btnScrollToTop').css('display', 'block');
-      } else {
-        $('#btnScrollToTop').css('display', 'none');
-      }
-    }
-
-  </script>
+    $(function() {window.onscroll = function() {scrollFunction()}; scrollFunction(); $(window).on("resize", function() {var win = $(this); if (win.width() < 768) {$('#carouselExampleIndicators').removeClass('carousel-fades'); $('.service_by3').addClass('d-none'); } else {$('.service_by3').removeClass('d-none'); } }); }); function scrollFunction() {if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {$('#btnScrollToTop').css('display', 'block'); } else {$('#btnScrollToTop').css('display', 'none'); } } </script>
 </body>
 
 </html>
