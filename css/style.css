@@ -1,0 +1,167 @@
+@media (min-width: 992px) {
+ 	.profile-pic {display: none; } 
+} 
+
+.gallery-expander {
+    position: initial;
+    /*-webkit-transition: max-height 500ms ease;*/
+    -o-transition: max-height 500ms ease; 
+    /*transition: max-height 500ms ease;*/
+}
+
+#service1 {
+	float: left;
+	background-color: #5ebfce6b;
+    box-shadow: 0px 0px 11px 3px #e4dddd;
+}
+#service2 {
+	background-color: #dc364642;
+    box-shadow: 0px 0px 11px 3px #e4dddd;
+}
+#service3 {
+	float: right;
+	background-color: #53b96a78;
+    box-shadow: 0px 0px 11px 3px #e4dddd;
+}
+
+@media (min-width: 768px) {
+	.carousel-title {font-size: 3.5rem; } 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.gallery-expander {
+	    min-width: 119vh;
+	}
+	#service2 {
+	    margin-left: -15em;
+	}
+
+}
+@media (min-width: 992px) {
+	.gallery-expander {
+	    min-width: 37.5em;
+	}
+	#service2 {
+	    margin-left: -13.5em
+	} 
+}
+@media  (min-width: 1024px) {
+	.gallery-expander {
+	    min-width: 107vh;
+	}	
+	#service2 {
+	    margin-left: -13.5em;
+	}
+}
+
+@media (min-width: 1140px) {
+	.gallery-expander {
+		min-width: 59.5em;
+	}
+	#service2 {
+		margin-left: -20.5em;
+	}
+}
+
+
+@media (max-width: 597px) {
+	.carousel-title {font-size: 1.7rem; } 
+	section#services .container .row .single-cat {
+		border: none !important; 
+	} 
+	section#home > .w-100 {
+		background-color: #92c7e654;
+	}
+	.gallery-expander {
+	    float: none !important;
+	    position: initial;
+	}
+	section#home {
+    	background-position: 75% !important;
+	}	
+} 
+
+section#services .container .row .single-cat {
+	border-radius: 10px;
+}
+.carousel-title {color: #343a40; font-weight: 700; text-transform: uppercase; line-height: 1; font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'; }
+section#home {
+	background: linear-gradient(to bottom, #D3D3D3 5%, #fff 86%); height: auto; 
+	background: url('../img/hero.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+p.p-desc {font-weight: 600;}
+.btn-outline-primary {border-color: #BD5D38 !important; color: #BD5D38; } 
+.btn-outline-primary:hover {background-color: #BD5D38 !important; color: #fff; } 
+#btnScrollToTop {display: none; position: fixed; bottom: 20px; right: 20px; z-index: 99; } 
+.tt-none{text-transform: none; } 
+.carousel-fades .carousel-item
+{opacity: 0; transition-duration: .8s; transition-property: opacity; } .carousel-fades  .carousel-item.active, .carousel-fades  .carousel-item-next.carousel-item-left, .carousel-fades  .carousel-item-prev.carousel-item-right {opacity: 1; } .carousel-fades .active.carousel-item-left, .carousel-fades  .active.carousel-item-right {opacity: 0; } .carousel-fades  .carousel-item-next, .carousel-fades .carousel-item-prev, .carousel-fades .carousel-item.active, .carousel-fades .active.carousel-item-left, .carousel-fades  .active.carousel-item-prev {transform: translateX(0); transform: translate3d(0, 0, 0); } 
+.bg-footer {background-color: #e9ecef; } 
+
+.single-cat {overflow: hidden; }
+
+.single-cat:hover {
+	opacity: 0.8;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.cat-cap {
+	padding-bottom: 10px;
+}
+
+.single-cat .cat-description {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	margin-bottom: 2px;
+}
+
+
+.animation-1 {
+	animation-name: services_collapse;
+	animation-duration: 1s;
+}
+
+@keyframes services_collapse {
+	25% {background: #e6e6e6ba;transition: width 1s, height 1s, transform 1s;box-shadow: 0px 0px 11px 3px #e4dddd;}
+}
+
+/*.resume.section*/
+
+
+
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.border-comp-services {
+	border-radius: 50px;
+	height: 5em;
+	border: none;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+.padding-2 {
+	padding: 3px 2px 3px 2px;
+}
