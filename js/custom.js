@@ -25,8 +25,8 @@ $(function() {
     lastScrollTop = st;
   });
 
-  var showMore = 'Show More';
-  var showLess = 'Show Less';
+  var showMore = '<span> Show More <i class="fa fa-angle-down"></i> </span>';
+  var showLess = '<span> Show Less <i class="fa fa-angle-up"></i> </span>';
 
   $('#service1').on('show.bs.collapse', function () {
     $(this).addClass('animation-1');

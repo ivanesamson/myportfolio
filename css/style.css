@@ -26,6 +26,7 @@
 
 @media (min-width: 768px) {
 	.carousel-title {font-size: 3.5rem; } 
+	.hi-title {font-size: 3.5rem; } 
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -35,6 +36,7 @@
 	#service2 {
 	    margin-left: -15em;
 	}
+
 
 }
 @media (min-width: 992px) {
@@ -164,4 +166,8 @@ p.p-desc {font-weight: 600;}
 
 .padding-2 {
 	padding: 3px 2px 3px 2px;
+}
+
+.btnpointer {
+	cursor: pointer;
 }
