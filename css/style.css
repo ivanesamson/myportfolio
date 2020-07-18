@@ -36,6 +36,9 @@
 	#service2 {
 	    margin-left: -15em;
 	}
+	.carousel-caption {
+		width: 50%;
+	}
 
 
 }
@@ -46,6 +49,7 @@
 	#service2 {
 	    margin-left: -13.5em
 	} 
+	.carousel-caption { width: 50%;}
 }
 @media  (min-width: 1024px) {
 	.gallery-expander {
@@ -53,6 +57,9 @@
 	}	
 	#service2 {
 	    margin-left: -13.5em;
+	}
+	.carousel-caption {
+		width: 50%;
 	}
 }
 
@@ -63,16 +70,22 @@
 	#service2 {
 		margin-left: -20.5em;
 	}
+	.carousel-caption {
+		width: 50%;
+	}
 }
 
 
 @media (max-width: 597px) {
-	.carousel-title {font-size: 1.7rem; } 
+	.carousel-caption{
+		width: 60%;
+	}
+	.carousel-title {font-size: 2.5rem; } 
 	section#services .container .row .single-cat {
 		border: none !important; 
 	} 
 	section#home > .w-100 {
-		background-color: #92c7e654;
+		/*background-color: #92c7e654;*/
 	}
 	.gallery-expander {
 	    float: none !important;
@@ -135,8 +148,6 @@ p.p-desc {font-weight: 600;}
 /*.resume.section*/
 
 
-
-
 /* make keyframes that tell the start state and the end state of our object */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -170,4 +181,10 @@ p.p-desc {font-weight: 600;}
 
 .btnpointer {
 	cursor: pointer;
+}
+
+.carousel-caption {
+	text-align: left;
+	right: 0;
+	left: 0;
 }
